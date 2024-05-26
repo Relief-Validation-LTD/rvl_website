@@ -4456,7 +4456,18 @@ body{
   	column-gap: 20px; 
 	position: relative;
 }
+
 .brochure-list-cps li{
+	position: relative;
+	margin-bottom: var(--margin-bottom-10);
+}
+.brochure-list-verification{
+	column-count: 1; 
+  	column-gap: 20px; 
+	position: relative;
+}
+
+.brochure-list-verification li{
 	position: relative;
 	margin-bottom: var(--margin-bottom-10);
 }
@@ -4474,6 +4485,13 @@ body{
 	margin-right: var(--margin-right-15);
 }
 .brochure-list-cps li span{
+	position: relative;
+	display: inline-block;
+	color: var(--white-color);
+	font-family: 'Font Awesome 5 Pro';
+	margin-right: var(--margin-right-15);
+}
+.brochure-list-verification li span{
 	position: relative;
 	display: inline-block;
 	color: var(--white-color);
@@ -4501,6 +4519,16 @@ body{
 	font-size: var(--font-16);
 	background-color: var(--color-two);
 }
+.brochure-list-verification li a{
+	position: relative;
+	font-weight: 500;
+	display: block;
+	padding: 16px 30px;
+	border-radius: 50px;
+	color: var(--white-color);
+	font-size: var(--font-16);
+	background-color: var(--color-fourteen);
+}
 
 .brochure-list li i{
 	position: absolute;
@@ -4516,12 +4544,22 @@ body{
 	font-weight: normal;
 	font-size: var(--font-14);
 }
+.brochure-list-verification li i{
+	position: absolute;
+	right: 30px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: var(--font-14);
+}
 
 .brochure-list li a:hover{
 	background-color: var(--main-color);
 }
 .brochure-list-cps li a:hover{
 	background-color: var(--main-color);
+}
+.brochure-list-verification li a:hover{
+	background-color: #017744;
 }
 
 .brochure-list li:last-child{
