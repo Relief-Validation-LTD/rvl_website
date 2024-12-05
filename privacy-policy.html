@@ -21,7 +21,7 @@
         .logo {
             display: block;
             margin: auto;
-            width: 150px; /* Adjust width as needed */
+            width: 150px;
             margin-bottom: 20px;
         }
         h1, h2 {
@@ -36,6 +36,12 @@
         }
         a:hover {
             text-decoration: underline;
+        }
+        /* Fix for URL justification on mobile */
+        p a {
+            word-break: break-all;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
     </style>
 </head>
