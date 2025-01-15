@@ -23,3 +23,7 @@
     height: 250px;
     width: 250px;
 }
+
+.uber-slide {
+    margin: 10px auto 0; /* 10px top margin, horizontally centered, no bottom margin */
+}
