@@ -1,0 +1,9 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/reliefvalidation/public_html/
+    - /bin/rsync -rlptD --delete \
+        --exclude ".git" \
+        --exclude ".cpanel.yml" \
+        --exclude "README.md" \
+        ./ $DEPLOYPATH
