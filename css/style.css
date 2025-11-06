@@ -4569,6 +4569,18 @@ body{
 	margin-bottom: var(--margin-zero);
 }
 
+/* Center the 5th item (Issued Certificate) across both columns */
+.brochure-list li:nth-child(5) {
+  column-span: all;              /* make it span across both columns */
+  -webkit-column-span: all;      /* Safari support */
+  text-align: center;            /* center inside */
+}
+
+.brochure-list li:nth-child(5) a {
+  display: inline-block;         /* keep button shape */
+  width: 50%;                    /* optional: half width of box */
+  margin: 0 auto;                /* centers it horizontally */
+}
 
 /***
 
