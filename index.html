@@ -43,7 +43,7 @@
 
     <!-- Start of Header -->
 	<!--Start of Tawk.to Script-->
-			<script type="text/javascript">
+			<!-- <script type="text/javascript">
 			var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 			(function(){
 				var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -53,11 +53,11 @@
 				s1.setAttribute('crossorigin','*');
 				s0.parentNode.insertBefore(s1,s0);
 			})();
-			</script>
-			<!-- <script src="https://cdn.n8nchatui.com/v1/embed.umd.js"></script>
-			<script>
-				window.Chatbot.init({
-				"n8nChatUrl": "http://103.52.140.82:5678/webhook/a05d3f77-9827-4977-9ddd-08c663fa258b/chat",
+			</script> -->
+			<script type="module" defer>
+			import Chatbot from "https://cdn.n8nchatui.com/v1/embed.js";
+			Chatbot.init({
+				"n8nChatUrl": "https://n8n.reliefvalidation.com.bd/webhook/0d2fbd42-6a53-4fa6-a5aa-a7ebd01a852c/chat",
 				"metadata": {}, // Include any custom data to send with each message to your n8n workflow
 				"theme": {
 				"button": {
@@ -88,31 +88,31 @@
 				"chatWindow": {
 					"borderRadiusStyle": "rounded",
 					"avatarBorderRadius": 50,
-					"messageBorderRadius": 25,
+					"messageBorderRadius": 16,
 					"showTitle": true,
-					"title": "                               RVL BOT",
+					"title": "                           RVL BOT",
 					"titleAvatarSrc": "https://www.svgrepo.com/show/362552/chat-centered-dots-bold.svg",
-					"avatarSize": 36,
+					"avatarSize": 1,
 					"welcomeMessage": "Welcome to Relief Validation Limited! 👋\n\nWe provide secure and efficient e-signature solutions to streamline your document signing process.\n\nHow can I assist you today?",
 					"errorMessage": "Contact with- Customer Care: +8809606501231, Customer Service:  helpdesk@reliefvalidation.com.bd ",
 					"backgroundColor": "#f4f8ff",
-					"height": 700,
-					"width": 600,
-					"fontSize": 23,
+					"height": 600,
+					"width": 500,
+					"fontSize": 22,
 					"starterPrompts": [
 					"🚀 How do I get started with e-signatures?",
-					"📝 How can I complete the registration process?",
+					"📝 How can I complete the registration process??",
 					"✍️ How do I sign a document?"
 					],
 					"starterPromptFontSize": 18,
 					"renderHTML": true,
-					"clearChatOnReload": false,
+					"clearChatOnReload": true,
 					"showScrollbar": false,
 					"botMessage": {
 					"backgroundColor": "#ddeaff",
 					"textColor": "#0d2a5e",
 					"showAvatar": false,
-					"avatarSrc": "https://www.svgrepo.com/show/334455/bot.svg ",
+					"avatarSrc": "https://www.svgrepo.com/show/334455/bot.svg",
 					"showCopyToClipboardIcon": true
 					},
 					"userMessage": {
@@ -129,13 +129,13 @@
 					"maxChars": 80,
 					"maxCharsWarningMessage": "You exceeded the characters limit. Please input less than 80 characters.",
 					"autoFocus": true,
-					"borderRadius": 24,
+					"borderRadius": 10,
 					"sendButtonBorderRadius": 50
 					}
 				}
 				}
-				})
-			</script> -->
+				});
+			</script>
 	<!--End of Tawk.to Script-->
 
     <header class="main-header">
