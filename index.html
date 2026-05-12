@@ -56,19 +56,21 @@
 			</script> -->
 			<script type="module" defer>
 			import Chatbot from "https://cdn.n8nchatui.com/v1/embed.js";
+
 			Chatbot.init({
 				"n8nChatUrl": "https://n8n.reliefvalidation.com.bd/webhook/0d2fbd42-6a53-4fa6-a5aa-a7ebd01a852c/chat",
-				"metadata": {}, // Include any custom data to send with each message to your n8n workflow
+				"metadata": {},
+
 				"theme": {
 				"button": {
 					"backgroundColor": "#1c71d8",
-					"right": 28,
-					"bottom": 28,
-					"size": 85,
+					"right": 20,
+					"bottom": 20,
+					"size": 60,                  // reduced button size
 					"iconColor": "#ffffff",
 					"customIconSrc": "https://www.svgrepo.com/show/362552/chat-centered-dots-bold.svg",
-					"customIconSize": 60,
-					"customIconBorderRadius": 15,
+					"customIconSize": 35,        // reduced icon size
+					"customIconBorderRadius": 12,
 					"autoWindowOpen": {
 					"autoOpen": true,
 					"openDelay": 3
@@ -76,38 +78,51 @@
 					"borderRadius": "circle",
 					"draggable": false
 				},
+
 				"tooltip": {
 					"showTooltip": true,
 					"tooltipMessage": "💬 Chat with us!",
 					"tooltipBackgroundColor": "#1a5fb4",
 					"tooltipTextColor": "#ffffff",
-					"tooltipFontSize": 17,
+					"tooltipFontSize": 14,
 					"hideTooltipOnMobile": true
 				},
+
 				"allowProgrammaticMessage": false,
+
 				"chatWindow": {
 					"borderRadiusStyle": "rounded",
 					"avatarBorderRadius": 50,
 					"messageBorderRadius": 16,
 					"showTitle": true,
-					"title": "                           RVL BOT",
+					"title": "RVL BOT",
 					"titleAvatarSrc": "https://www.svgrepo.com/show/362552/chat-centered-dots-bold.svg",
 					"avatarSize": 1,
+
 					"welcomeMessage": "Welcome to Relief Validation Limited! 👋\n\nWe provide secure and efficient e-signature solutions to streamline your document signing process.\n\nHow can I assist you today?",
-					"errorMessage": "Contact with- Customer Care: +8809606501231, Customer Service:  helpdesk@reliefvalidation.com.bd ",
+
+					"errorMessage": "Customer Care: +8809606501231 | helpdesk@reliefvalidation.com.bd",
+
 					"backgroundColor": "#f4f8ff",
-					"height": 600,
-					"width": 500,
-					"fontSize": 22,
+
+					// ✅ FIXED SIZE
+					"width": window.innerWidth < 768 ? 300 : 350,
+					"height": window.innerWidth < 768 ? 400 : 450,
+
+					"fontSize": 14,
+
 					"starterPrompts": [
 					"🚀 How do I get started with e-signatures?",
-					"📝 How can I complete the registration process??",
+					"📝 How can I complete the registration process?",
 					"✍️ How do I sign a document?"
 					],
-					"starterPromptFontSize": 18,
+
+					"starterPromptFontSize": 14,
+
 					"renderHTML": true,
 					"clearChatOnReload": true,
-					"showScrollbar": false,
+					"showScrollbar": true,
+
 					"botMessage": {
 					"backgroundColor": "#ddeaff",
 					"textColor": "#0d2a5e",
@@ -115,26 +130,28 @@
 					"avatarSrc": "https://www.svgrepo.com/show/334455/bot.svg",
 					"showCopyToClipboardIcon": true
 					},
+
 					"userMessage": {
 					"backgroundColor": "#0d3b8c",
 					"textColor": "#ffffff",
 					"showAvatar": false,
 					"avatarSrc": "https://www.svgrepo.com/show/532363/user-alt-1.svg"
 					},
+
 					"textInput": {
 					"placeholder": "Type your message...",
 					"backgroundColor": "#ffffff",
 					"textColor": "#0d2a5e",
 					"sendButtonColor": "#0d3b8c",
 					"maxChars": 80,
-					"maxCharsWarningMessage": "You exceeded the characters limit. Please input less than 80 characters.",
+					"maxCharsWarningMessage": "Please keep your message under 80 characters.",
 					"autoFocus": true,
 					"borderRadius": 10,
 					"sendButtonBorderRadius": 50
 					}
 				}
 				}
-				});
+			});
 			</script>
 	<!--End of Tawk.to Script-->
 
